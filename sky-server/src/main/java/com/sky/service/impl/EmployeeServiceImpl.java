@@ -70,7 +70,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
 
         //密码比对
-        // TODO 后期需要进行md5加密，然后再进行比对,第一行已实现
+        // 后期需要进行md5加密，然后再进行比对,第一行已实现
         // 对前端传过来的明文密码进行MD5加密处理
          password = DigestUtils.md5DigestAsHex(password.getBytes());
         if (!password.equals(employee.getPassword())) {
