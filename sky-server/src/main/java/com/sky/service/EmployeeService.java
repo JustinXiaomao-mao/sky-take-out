@@ -1,9 +1,17 @@
 package com.sky.service;
 
+import com.sky.dto.EmployeeDTO;
 import com.sky.dto.EmployeeLoginDTO;
 import com.sky.entity.Employee;
 
 public interface EmployeeService {
+
+    /**
+     * 新增员工
+     * @param employeeDTO
+     */
+    //抽象方法不能有方法主体
+    void save(EmployeeDTO employeeDTO);
 
     /**
      * 员工登录
